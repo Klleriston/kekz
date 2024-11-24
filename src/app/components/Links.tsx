@@ -5,7 +5,7 @@ export function Links() {
       { label: "Repositórios", url: "https://github.com/Klleriston" },
       { label: "Artigos", url: "https://dev.to/klleriston" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/klleriston-andrade/" },
-      { label: "Currículo", url: "/Klleriston_Desenvolvedor.pdf", isDownload: true },
+      { label: "Currículo", url: "/Klleriston-Andrade-Desenvolvedor.pdf", isDownload: true },
       { label: "Sobre Mim", url: "/sobre", isInternal: true },
     ];
   

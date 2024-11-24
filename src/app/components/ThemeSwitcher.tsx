@@ -24,7 +24,7 @@ export function ThemeSwitcher() {
       {currentTheme === "dark" ? (
         <FiSun className="text-yellow-400 size-7" />
       ) : (
-        <FiMoon className="text-blue-800 size-7" />
+        <FiMoon className="text-gray-900 size-7" />
       )}
     </button>
   );
