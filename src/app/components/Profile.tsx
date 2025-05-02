@@ -12,7 +12,7 @@ export function Profile() {
                 <TypeAnimation sequence={["Desenvolvedor", 3000]} cursor={false} />
             </h3>
             <h3 className="mt-2 text-gray-700 dark:text-gray-300">
-                <TypeAnimation sequence={["Node.js | TypeScript | Java | GCP | React", 2000]} cursor={false} />
+                <TypeAnimation sequence={["Node.js | TypeScript | React | Azure | AWS", 2000]} cursor={false} />
             </h3>
         </div>
     );
