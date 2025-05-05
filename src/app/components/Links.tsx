@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Links() {
   const links = [
     { label: "Repositórios", url: "https://github.com/Klleriston" },
-    { label: "Artigos", url: "https://dev.to/klleriston" },
+    { label: "Artigos", url: "/artigos", isInternal: true },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/klleriston-andrade/" },
     { label: "Currículo", url: "/KlleristonAndrade.pdf", isDownload: true },
     { label: "Sobre Mim", url: "/sobre", isInternal: true },

@@ -1,10 +1,10 @@
 "use client";
 
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { Links } from "./components/Links";
-import { Profile } from "./components/Profile";
 import { useState, useEffect } from "react";
+import { Header } from "./components/Header";
+import { Profile } from "./components/Profile";
+import { Links } from "./components/Links";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   const [expanded, setExpanded] = useState<boolean>(false);
