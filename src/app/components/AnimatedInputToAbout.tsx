@@ -20,13 +20,10 @@ export function AnimatedInputToAbout() {
                     <div className="flex flex-col h-full text-gray-500 dark:text-white">
                         <h1 className="text-2xl font-bold mb-4 text-center">Sobre mim</h1>
                         <p className="text-sm leading-relaxed">
-                            Como desenvolvedor de software, atuo na criação de soluções escaláveis e performáticas, com experiência prática em ambientes corporativos e projetos de alto impacto. Tenho domínio de todo o ciclo de desenvolvimento de software, desde a análise de requisitos e prototipação até entregas contínuas (CI/CD) e sustentação em produção.
+                            Desenvolvedor de software com experiência no desenvolvimento de soluções end-to-end escaláveis e performáticas. Atuo com foco em back-end e front-end utilizando tecnologias como Java, Spring Boot, Kotlin, Node.js, React e TypeScript. Possuo vivência em ambientes ágeis, aplicando práticas do Scrum e da ITIL v4 em atividades de sustentação e suporte técnico.
                         </p>
                         <p className="text-sm leading-relaxed mt-4">
-                            Minha principal stack inclui Node.js, TypeScript e React.js, tenho familiaridade na construção e consumo de REST APIs, automações com GitHub Actions,containerização com Docker e implementações em nuvem.
-                        </p>
-                        <p className="text-sm leading-relaxed mt-4">
-                            Tenho vivência sólida com provedores de nuvem como AWS e Azure.
+                            Tenho expertise em computação em nuvem com AWS e Microsoft Azure, incluindo certificações oficiais AI-900 e AZ-900. Experiência sólida com containers (Docker), bancos de dados relacionais (PostgreSQL, MySQL) e não relacionais (MongoDB), além de conhecimento em práticas de CI/CD.
                         </p>
                         <div className="text-center mt-6">
                             <a
