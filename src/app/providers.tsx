@@ -6,6 +6,9 @@ import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
+import ptTranslations from "../locales/pt/translation.json";
+import enTranslations from "../locales/en/translation.json";
+
 export function Providers({ children }: { children: React.ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
 
@@ -16,10 +19,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
         .init({
           resources: {
             pt: {
-              translation: import('../locales/pt/translation.json')
+              translation: ptTranslations
             },
             en: {
-              translation: import('../locales/en/translation.json')
+              translation: enTranslations
             }
           },
           fallbackLng: 'pt',
