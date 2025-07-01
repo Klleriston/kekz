@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
@@ -16,10 +16,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
         .init({
           resources: {
             pt: {
-              translation: require('../locales/pt/translation.json')
+              translation: import('../locales/pt/translation.json')
             },
             en: {
-              translation: require('../locales/en/translation.json')
+              translation: import('../locales/en/translation.json')
             }
           },
           fallbackLng: 'pt',
