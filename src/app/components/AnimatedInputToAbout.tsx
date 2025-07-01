@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 
 export function AnimatedInputToAbout() {
     const [expanded, setExpanded] = useState<boolean>(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         setExpanded(true);
@@ -18,13 +20,29 @@ export function AnimatedInputToAbout() {
             >
                 {expanded ? (
                     <div className="flex flex-col h-full text-gray-500 dark:text-white">
-                        <h1 className="text-2xl font-bold mb-4 text-center">Sobre mim</h1>
+                        <h1 className="text-2xl font-bold mb-4 text-center">{t('about.title')}</h1>
+                        <h3 className="text-xl font-bold mb-2">{t('titles.career summary')}</h3>
                         <p className="text-sm leading-relaxed">
-                            Desenvolvedor de software com experiência no desenvolvimento de soluções end-to-end escaláveis e performáticas. Atuo com foco em back-end e front-end utilizando tecnologias como Java, Spring Boot, Kotlin, Node.js, React e TypeScript. Possuo vivência em ambientes ágeis, aplicando práticas do Scrum e da ITIL v4 em atividades de sustentação e suporte técnico.
+                            {t('about.description')}
                         </p>
-                        <p className="text-sm leading-relaxed mt-4">
-                            Tenho expertise em computação em nuvem com AWS e Microsoft Azure, incluindo certificações oficiais AI-900 e AZ-900. Experiência sólida com containers (Docker), bancos de dados relacionais (PostgreSQL, MySQL) e não relacionais (MongoDB), além de conhecimento em práticas de CI/CD.
-                        </p>
+
+                        {t('about.certifications') && (
+                          <div className="mt-4">
+                            <h3 className="text-xl font-bold mb-2">{t('titles.certifications')}</h3>
+                            <p className="text-sm leading-relaxed font-semibold">
+                              {t('about.certifications')}
+                            </p>
+                          </div>
+                        )}
+
+                        {t('about.hardSkills') && (
+                          <div className="mt-2">
+                            <h3 className="text-xl font-bold mb-2">{t('titles.hard skills')}</h3>
+                            <p className="text-sm leading-relaxed text-justify">
+                              {t('about.hardSkills')}
+                            </p>
+                          </div>
+                        )}
                         <div className="text-center mt-6">
                             <a
                                 href="mailto:klleandrade@outlook.com"

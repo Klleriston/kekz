@@ -1,0 +1,34 @@
+{
+  "welcome": "Welcome to my blog!",
+  "about": {
+    "title": "About me",
+    "description": "Fullstack Systems Analyst with 3+ years of experience in developing scalable, high-performance applications. Proven track record in large-scale projects, including Google partnership for educational solutions development (SENAI, SESI, CNI) handling 30-50k monthly active users. Engineered gamified corporate engagement platform deployed by Wizard, Mercado Livre, and Nivea, achieving up to 70% productivity increase. Financial sector experience (BTG Pactual) in critical systems maintenance and integration analysis. Familiarity with microservices architectures, cloud environments (AWS/Azure), and agile methodologies.",
+    "certifications": "AI-900 | AZ-900",
+    "hardSkills": "Java | Spring Boot | Kotlin | Node | React | PostgreSQL | MySQL | MongoDB | Docker | AWS | Azure | Git | GitHub | Scrum | ITIL v4"
+  },
+  "titles": {
+    "career summary": "Career Summary",
+    "hard skills": "Hard Skills",
+    "certifications": "Certifications"
+  },
+  "articles": {
+    "title": "My Articles",
+    "loading": "Loading articles...",
+    "no_articles": "No articles found.",
+    "description": "Exploring technologies and sharing knowledge"
+  },
+  "theme": {
+    "dark": "Dark Theme",
+    "light": "Light Theme"
+  },
+  "errors": {
+    "network": "Network error :/"
+  },
+  "navigation": {
+    "repositories": "Repositories",
+    "articles": "Articles",
+    "linkedin": "LinkedIn",
+    "resume": "Resume",
+    "about": "About Me"
+  }
+}

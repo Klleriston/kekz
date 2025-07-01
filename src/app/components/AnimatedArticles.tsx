@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { Article } from "../types/artigo";
+import { useTranslation } from 'react-i18next';
 
 export function AnimatedArticles() {
+    const { t } = useTranslation();
     const [expanded, setExpanded] = useState<boolean>(false);
     const [articles, setArticles] = useState<Article[]>([]);
     const [loading, setLoading] = useState(false);
@@ -15,7 +17,7 @@ export function AnimatedArticles() {
                 "https://dev.to/api/articles?username=klleriston"
             );
             if (!response.ok) {
-                throw new Error("rede nao ta legal :/");
+                throw new Error(t('errors.network'));
             }
             const data = await response.json();
             setArticles(data);
@@ -40,12 +42,12 @@ export function AnimatedArticles() {
             >
                 {expanded ? (
                     <div className="flex flex-col items-center h-full text-gray-500 dark:text-white">
-                        <h1 className="text-2xl font-bold mb-4">Meus Artigos</h1>
+                        <h1 className="text-2xl font-bold mb-4">{t('articles.title')}</h1>
 
                         {loading ? (
-                            <p className="text-xl">Carregando artigos...</p>
+                            <p className="text-xl">{t('articles.loading')}</p>
                         ) : articles.length === 0 ? (
-                            <p className="text-2xl font-bold">Nenhum artigo encontrado.</p>
+                            <p className="text-2xl font-bold">{t('articles.no_articles')}</p>
                         ) : (
                             <div className="w-full">
                                 {articles.map((article) => (

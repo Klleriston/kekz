@@ -2,9 +2,32 @@
 
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
+import { useTranslation, initReactI18next } from "react-i18next";
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 export function Providers({ children }: { children: React.ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
+
+    if (!i18n.isInitialized) {
+      i18n
+        .use(LanguageDetector)
+        .use(initReactI18next)
+        .init({
+          resources: {
+            pt: {
+              translation: require('../locales/pt/translation.json')
+            },
+            en: {
+              translation: require('../locales/en/translation.json')
+            }
+          },
+          fallbackLng: 'pt',
+          interpolation: {
+            escapeValue: false
+          }
+        });
+    }
 
     useEffect(() => {
       setIsMounted(true);
@@ -13,10 +36,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
     if (!isMounted) return <>{children}</>;
 
     return (
-        <ThemeProvider 
-        attribute="class" defaultTheme="system" 
-        enableSystem={true}>
+        <>
+          <ThemeProvider 
+            attribute="class" defaultTheme="system" 
+            enableSystem={true}
+          >
             {children}
-        </ThemeProvider>
+          </ThemeProvider>
+        </>
     );
 }

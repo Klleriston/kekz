@@ -1,12 +1,15 @@
 "use client";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 export function Links() {
+  const { t } = useTranslation();
   const links = [
-    { label: "Repositórios", url: "https://github.com/Klleriston" },
-    { label: "Artigos", url: "/artigos", isInternal: true },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/klleriston-andrade/" },
-    { label: "Currículo", url: "/KlleristonAndrade.pdf", isDownload: true },
-    { label: "Sobre Mim", url: "/sobre", isInternal: true },
+    { label: t('navigation.repositories'), url: "https://github.com/Klleriston" },
+    { label: t('navigation.articles'), url: "/artigos", isInternal: true },
+    { label: t('navigation.linkedin'), url: "https://www.linkedin.com/in/klleriston-andrade/" },
+    { label: t('navigation.resume'), url: "/KlleristonAndrade.pdf", isDownload: true },
+    { label: t('navigation.about'), url: "/sobre", isInternal: true },
   ];
 
   return (
