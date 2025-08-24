@@ -7,8 +7,8 @@
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Analista de Sistemas Fullstack com +3 anos de experiência em desenvolvimento de aplicações escaláveis e alta performance. Experiência comprovada em projetos de grande escala, incluindo parceria com Google para desenvolvimento de soluções educacionais (SENAI, SESI, CNI) com tráfego de 30-50k usuários mensais. Desenvolvi plataforma gamificada para engajamento corporativo utilizada por Wizard resultando em aumento de produtividade de até 70%. Atuação no setor financeiro (BTG Pactual) em sustentação e análise de integrações de sistemas críticos. Familiaridade com arquiteturas de microsserviços, ambientes cloud (AWS/Azure) e metodologias ágeis.",
-    "certifications": "AI-900 | AZ-900",
+    "description": "Desenvolvedor de Sistemas Fullstack (Backend & Frontend) com 3+ anos de experiência em desenvolvimento, sustentação e análise de aplicações escaláveis e de alta performance. Atuei em parceria com o Google na criação de soluções para grandes instituições de educação (SENAI, SESI, CNI), incluindo ferramenta de busca com 30k–50k usuários mensais, ampliando engajamento da base. Participei do desenvolvimento de uma plataforma interativa com feed infinito para colaboração interna, utilizada por empresas como Wizard e Mercado Livre, contribuindo para +70% de produtividade com recursos gamificados. No setor bancário, atuei no BTG Pactual, oferecendo suporte e manutenção a sistemas internos (WM), análise de integrações e sustentação ponta a ponta. Apaixonado por desafios técnicos, atuo do conceito à entrega em ambientes dinâmicos e de alta complexidade, sempre com foco em soluções robustas e de impacto real.",
+    "certifications": "AI-900 | AZ-900 | OCI Foundations Associate",
     "hardSkills": "Java | Spring boot | Kotlin | Node | React |  Postgres | MySQL | MongoDB | Docker | AWS | Azure | Git | GitHub | Scrum | ITIL v4"
   },
   "articles": {

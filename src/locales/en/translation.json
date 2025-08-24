@@ -2,8 +2,8 @@
   "welcome": "Welcome to my blog!",
   "about": {
     "title": "About me",
-    "description": "Fullstack Systems Analyst with 3+ years of experience in developing scalable, high-performance applications. Proven track record in large-scale projects, including Google partnership for educational solutions development (SENAI, SESI, CNI) handling 30-50k monthly active users. Engineered gamified corporate engagement platform deployed by Wizard, Mercado Livre, and Nivea, achieving up to 70% productivity increase. Financial sector experience (BTG Pactual) in critical systems maintenance and integration analysis. Familiarity with microservices architectures, cloud environments (AWS/Azure), and agile methodologies.",
-    "certifications": "AI-900 | AZ-900",
+    "description": "Fullstack Systems Developer (Backend & Frontend) with 3+ years of experience in development, maintenance, and analysis of scalable, high-performance applications. I worked in partnership with Google creating solutions for major educational institutions (SENAI, SESI, CNI), including a search tool with 30k–50k monthly users, expanding user base engagement. I participated in developing an interactive platform with infinite feed for internal collaboration, used by companies like Wizard and Mercado Livre, contributing to +70% productivity improvement through gamified features. In the banking sector, I worked at BTG Pactual, providing support and maintenance for internal systems (WM), integration analysis, and end-to-end sustenance. Passionate about technical challenges, I work from concept to delivery in dynamic, highly complex environments, always focused on robust solutions with real impact.",
+    "certifications": "AI-900 | AZ-900 | OCI Foundations Associate",
     "hardSkills": "Java | Spring Boot | Kotlin | Node | React | PostgreSQL | MySQL | MongoDB | Docker | AWS | Azure | Git | GitHub | Scrum | ITIL v4"
   },
   "titles": {
